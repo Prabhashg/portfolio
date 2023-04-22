@@ -104,7 +104,10 @@ html {
   }
 }
 
-
+.bottom-nav{
+  backdrop-filter: blur(6px) saturate(2.5);
+  background: #07121dd4;
+}
 /* -------------------------------------------------Background -------------------------------------------------*/
 .greet {
   font-size: 10rem;

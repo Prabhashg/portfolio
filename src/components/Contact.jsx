@@ -46,7 +46,7 @@ function Contact() {
       transition={{
         diration: 1,
       }}
-      className="mx-4 md:mx-48 mt-28 md:px-24 flex gap-6 h-full flex-col z-10 pb-10 text-article"
+      className="mx-4 md:mx-48 mt-28 md:px-24 flex gap-6 h-full flex-col z-10 pb-14 text-article"
     >
       <div className="mb-8 md:w-1/2 w-full">
         <h1 className="text-5xl thickk font-bold text-header">Contact</h1>

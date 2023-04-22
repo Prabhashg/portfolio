@@ -19,7 +19,7 @@ function Header() {
       transition={{
         duration:1
       }}
-      className="mx-4 md:mx-16 lg:mx-48 mt-24 justify-center flex items-center z-10"
+      className="mx-4 md:mx-16 lg:mx-48 mt-24 justify-center flex items-center pb-12 z-10"
     >
       <div className="pb-4 md:w-4/5 flex gap-4 flex-col">
         <p className="glitch ">

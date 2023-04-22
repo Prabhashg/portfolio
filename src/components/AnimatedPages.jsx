@@ -11,6 +11,7 @@ import Navbar from "./Navbar";
 import Modal from "./Modal";
 import { useState,useEffect } from "react";
 import SideNav from "./SideNav";
+import BottomNav from "./BottomNav";
 
 const pageVariants = {
   initial: {
@@ -29,8 +30,9 @@ function AnimatedPages() {
   const [isModel, setIsModel] = useState(false);
   const [modelContent, setModelContent] = useState();
   const [showSideBar, setShowSideBar] = useState(false);
+  const [showBottomBar, setShowBottomBar] = useState(true);
   useEffect(() => {
-   
+    
     if (isModel) {
       document.body.style.overflow = 'hidden';
       document.body.style.paddingRight = '15px';
@@ -39,7 +41,7 @@ function AnimatedPages() {
       document.body.style.overflow = 'unset';
       document.body.style.paddingRight = '0px';
     };
-  }, [isModel,showSideBar]);
+  }, [isModel]);
 
   return (
     <div>
@@ -47,6 +49,7 @@ function AnimatedPages() {
         <Navbar setShowSideBar={setShowSideBar} />
         <Modal isModal={isModel} modelContent={modelContent} setIsModel={setIsModel} />
         <SideNav showSideBar={showSideBar} setShowSideBar={setShowSideBar} />
+        <BottomNav showBottomBar={showBottomBar} />
         <Routes>
           <Route path="/" element={<Header />} pageVariants={pageVariants} />
           <Route path="projects" element={<Projects />} >

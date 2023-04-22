@@ -24,7 +24,7 @@ function Projects() {
       transition={{
         duration: 1,
       }}
-      className="lg:mx-48 mx-4 mt-28 lg:px-24 flex gap-6 h-full flex-col z-10 pb-10 text-article"
+      className="lg:mx-48 mx-4 mt-28 lg:px-24 flex gap-6 h-full flex-col z-10 pb-14 text-article"
     >
       <div className="mb-12 w-full">
         <h1 className="text-5xl thickk font-bold text-header">Projects</h1>

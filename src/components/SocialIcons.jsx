@@ -3,7 +3,7 @@ import {GrLinkedinOption,GrFacebookOption,GrTwitter,GrInstagram,GrGithub} from '
 
 function SocialIcons() {
   return (
-    <div className='flex gap-5'>
+    <div className='md:flex gap-5 hidden'>
           <GrLinkedinOption />
           <GrGithub />
           <GrFacebookOption />

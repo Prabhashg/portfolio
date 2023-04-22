@@ -4,18 +4,16 @@ import { motion } from 'framer-motion'
 import {AiOutlineMenu} from "react-icons/ai"
 
 const nav_items = [
-  {
-    name: "Projects",
-    link:"/projects/all"
-  },
-  {
-    name: "Skills",
-    link:"/skills"
-  },
+ 
   {
     name: "About Me",
     link:"/about"
   },
+  {
+    name: "Projects",
+    link:"/projects/all"
+  },
+
   {
     name: "Contact",
     link:"/contact"

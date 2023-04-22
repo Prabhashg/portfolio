@@ -25,7 +25,7 @@ function About() {
     transition={{
       diration:1
     }}
-    className="md:px-10 mx-0 px-4 lg:mx-48 mt-28 lg:px-24 flex gap-6 h-full flex-col z-10 pb-10 text-article">
+    className="md:px-10 mx-0 px-4 lg:mx-48 mt-28 lg:px-24 flex gap-6 h-full flex-col z-10 pb-14 text-article">
       <div className="mb-6 lg:mb-12">
         <h1 className="text-4xl md:text-5xl thickk font-bold text-header">
           About Me.

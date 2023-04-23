@@ -3,7 +3,8 @@ import Projects from "./Projects";
 import About from "./About";
 import Header from "./Header";
 import Contact from "./Contact";
-import Web from "./Projects/web";
+import Web from "./Projects/Web";
+import Data from "./Projects/Data";
 import AllProjects from "./Projects/AllProjects";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
@@ -58,7 +59,7 @@ function AnimatedPages() {
           <Route path="projects" element={<Projects />} >
           <Route path="all" element={ <AllProjects setIsModel={setIsModel} setModelContent={ setModelContent}/>} />
             <Route path="web" element={<Web setIsModel={setIsModel} setModelContent={ setModelContent} />} />
-              <Route path="data" element={ <AllProjects setIsModel={setIsModel} setModelContent={ setModelContent}/>} />
+              <Route path="data" element={ <Data setIsModel={setIsModel} setModelContent={ setModelContent}/>} />
           </Route>
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />

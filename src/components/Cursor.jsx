@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./Cursor.css";
 import { motion } from "framer-motion";
 
-const Cursor = () => {
+const Cursor = ({scaling}) => {
   const [largecircle, setlargecircle] = useState({ x: 0, y: 0 });
   const [smallcircle, setsmallcircle] = useState({ x: 0, y: 0 });
 
@@ -27,6 +27,7 @@ const Cursor = () => {
           transition: { duration:0.4,type: "twig"},
         }}
         className="large_circle"
+        style={{scale:scaling?1.5:1}}
        ></motion.div>
       <motion.div
         animate={{
@@ -35,6 +36,14 @@ const Cursor = () => {
           
         }}
         className="small_circle"></motion.div>
+      <motion.div
+        animate={{
+          x: smallcircle.x+4,
+          y: smallcircle.y-8,
+          opacity:scaling?0.9:0
+        }}
+        className="bg-white rounded-full text-sm border-0 font-bold text-black px-2 flex justify-center items-center z-10 font-Lato uppercase">open</motion.
+        div>
     </div>
   );
 };

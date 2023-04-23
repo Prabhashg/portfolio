@@ -42,7 +42,7 @@ function Projects() {
         </div>
       </div>
 
-      <Next text={"Contact Me"} path={"/contact"} />
+      <Next text={"View my resume"} path={"/resume"} />
       <SocialIcons />
     </motion.div>
   );

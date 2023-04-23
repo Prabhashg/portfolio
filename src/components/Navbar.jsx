@@ -13,6 +13,10 @@ const nav_items = [
     name: "Projects",
     link:"/projects/all"
   },
+  {
+    name: "Resume",
+    link:"/resume"
+  },
 
   {
     name: "Contact",
@@ -33,7 +37,7 @@ const navVariant = {
   }
 }
 
-function Navbar({setShowSideBar}) {
+function Navbar({setShowSideBar,setScaling}) {
   const navigate = useNavigate()
 
   const handleNavigation = (route) => {
@@ -58,6 +62,8 @@ function Navbar({setShowSideBar}) {
           initial="hidden"
           animate="visible"
           className="navlink lato text-article relative"
+          onMouseEnter={() => setScaling(true)}
+          onMouseLeave={() => setScaling(false)}
         >{item.name}</motion.button>)}
       </div>
     </div>

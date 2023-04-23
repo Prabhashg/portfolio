@@ -39,13 +39,18 @@ function SideNav({ showSideBar, setShowSideBar }) {
       name: "Home",
       link: "/",
     },
-    {
-      name: "Projects",
-      link: "/projects/all",
-    },
+    
     {
       name: "About Me",
       link: "/about",
+    },
+    {
+      name: "Resume",
+      link:"/resume"
+    },
+    {
+      name: "Projects",
+      link: "/projects/all",
     },
     {
       name: "Contact",

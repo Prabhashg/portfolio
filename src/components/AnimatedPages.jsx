@@ -12,7 +12,8 @@ import Modal from "./Modal";
 import { useState,useEffect } from "react";
 import SideNav from "./SideNav";
 import BottomNav from "./BottomNav";
-
+import Resume from "./Resume";
+import Cursor from "./Cursor";
 const pageVariants = {
   initial: {
     opacity: 0,
@@ -31,6 +32,7 @@ function AnimatedPages() {
   const [modelContent, setModelContent] = useState();
   const [showSideBar, setShowSideBar] = useState(false);
   const [showBottomBar, setShowBottomBar] = useState(true);
+  const [scaling, setScaling] = useState(false);
   useEffect(() => {
     
     if (isModel) {
@@ -46,7 +48,8 @@ function AnimatedPages() {
   return (
     <div>
       <AnimatePresence location={location} key={location.pathname} >
-        <Navbar setShowSideBar={setShowSideBar} />
+        <Cursor scaling={scaling} />
+        <Navbar setShowSideBar={setShowSideBar} setScaling={setScaling} />
         <Modal isModal={isModel} modelContent={modelContent} setIsModel={setIsModel} />
         <SideNav showSideBar={showSideBar} setShowSideBar={setShowSideBar} />
         <BottomNav showBottomBar={showBottomBar} />
@@ -59,6 +62,7 @@ function AnimatedPages() {
           </Route>
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="resume" element={<Resume />} />
         </Routes>
       </AnimatePresence>
     </div>

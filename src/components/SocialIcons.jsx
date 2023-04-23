@@ -4,12 +4,12 @@ import {GrLinkedinOption,GrFacebookOption,GrTwitter,GrInstagram,GrGithub} from '
 function SocialIcons() {
   return (
     <div className='md:flex gap-5 hidden'>
-          <GrLinkedinOption />
-          <GrGithub />
-          <GrFacebookOption />
-          <GrTwitter />
-          <GrInstagram />
-          
+          <a href="https://www.linkedin.com/in/supreeth-ratam-127117221/"><GrLinkedinOption /></a>
+          <a href="https://github.com/supreeth-ratam"> <GrGithub /></a>
+          <a href="https://www.facebook.com/supreeth.ratam"> <GrFacebookOption /></a>
+          <a href="https://twitter.com/Supreet34364725"> <GrTwitter /></a>
+          <a href="https://www.instagram.com/supreeth_ratam/"> <GrInstagram /></a>
+ 
     </div>
   )
 }

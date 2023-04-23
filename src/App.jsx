@@ -10,7 +10,6 @@ function App() {
  
   return (
     <>
-      <Cursor />
      
       <div className="bg-bg-black text-white min-h-screen ">
         <Router>
